@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+.header{
+  width: 100%;
+  height: 60px;
+  background-color:rgb(7, 63, 65);
+  position: fixed;
+  z-index: 999;
+  
+}
+
+.headerbox{
+ 
+  height: 100%;
+  padding:3px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks{
+  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navlink{
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin:  0px  8px 0px 8px;
+}
+
+.home{
+  width: 100%;
+  height: 100vh;
+  
+  flex: 1;
+  display: flex;
+}
+.leftbar{
+  flex: 6;
+  
+}
+.leftbox{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.title{
+  font-weight: 600;
+  color: #fff;
+}
+.box{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(61, 166, 214);
+  bottom: 50px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightbar{
+  flex: 4;
+  background-color: rgb(2, 18, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightone{
+  flex: 1;
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2017/03/13/21/41/scientist-2141259_960_720.jpg');
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+
+.login{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: block;
+  margin: auto;
+}
+
+.btn-info{
+  padding: 7px 20px;
+  border-radius: 0;
+}
+
+.form-control{
+  border: 2px solid rgb(2, 57, 88) !important;
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+}
+
+
+
+
+@media (max-width:850px ) {
+  .leftbar{
+    display: none;
+  }
+  .login{
+    width: 60%;
+  }
+}
+
+@media (max-width:500px) {
+  .leftbar{
+    display: none;
+  }
+  .login{
+    width: 80%;
+  }
+}
